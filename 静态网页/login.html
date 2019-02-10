@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initail-scale=1">
+	<title>login</title>
+	<link rel="stylesheet" href="./adapter.css">
+	<link rel="stylesheet" href="./normalize.css">
+	<style>
+		/* 全局样式 */
+		ul,li,p {
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+		li {
+			list-style: none;
+		}
+		/* 登陆信息 */
+		.login {
+			margin-top: 5rem;
+			margin-left: 3rem;
+			margin-right: 3rem;
+			text-align: center;
+		}
+		.left {
+			color: #aaa;
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-top: 0.67rem;
+			margin-left: 0.67rem;
+		}
+		.title {
+			color: #17b029;
+			font-size: 2rem;
+			font-weight: 800;
+			margin: 1rem;
+		}
+		.option span {
+			margin: 2rem;
+			line-height: 4rem;
+		}
+		.input-style {
+			width: 100%;
+			font-size: 1rem;
+			line-height: 2.5rem;
+			padding-left: 0.67rem;
+			outline: 0;
+			border:1px solid #c8cccf;
+			border-radius: 0.33rem;
+			box-sizing: border-box;
+		}
+		.center-input {
+			position: relative;
+			margin: 0.67rem 0;
+		}
+		.passwordbtn-o {
+			width: 2rem;
+			height: 1rem;
+			border-radius: 0.5rem;
+			position: absolute;
+			right: 0.67rem;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: #17b029;
+		}
+		.passwordbtn-i {
+			width: 1rem;
+			height: 1rem;
+			border-radius: 0.5rem;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			border: 1px solid #aaa	;
+			background-color: #fff;
+		}
+		.bottom-input {
+			position: relative;
+		}
+		.bottom-input img {
+			height: 2.3rem;
+			position: absolute;
+			right: 0.67rem;
+			top: 50%;
+			transform: translateY(-50%);
+
+		}
+		.btn {
+			color: #fff;
+			display: block;
+			width: 100%;
+			font-size: 1rem;
+			line-height: 2.5rem;
+			border: 1px solid #eee;
+			border-radius: 0.33rem;
+			background-color: #17b029;
+			margin-top: 0.67rem;
+		}
+		.about {
+			font-size: 0.88rem;
+			line-height: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="login">
+		<a href="" class="left">向左箭头</a>
+		<p class="title">好卖外卖</p>
+		<p class="option">
+			<a href=""><span>短信登陆</span></a>
+			<a href=""><span>密码登陆</span></a>
+		</p>
+		<div class="in">
+			<input type="text"  placeholder="手机/邮箱/用户名" class="input-style">
+			<div class="center-input">
+				<input type="password" placeholder="密码" class="input-style">
+				<a href="">
+					<div class="passwordbtn-o">
+						<div class="passwordbtn-i"></div>
+					</div>
+				</a>
+			</div>
+			<div class="bottom-input">
+				<input type="text" placeholder="验证码" class="input-style">
+				<a href="">
+					<img src="../static/imgs/验证码.jpg" alt="">
+				</a>
+			</div>
+		</div>
+		<a href="" class="btn">登陆</a>
+		<a href="" class="about">关于我们</a>
+	</div>
+</body>
+</html>

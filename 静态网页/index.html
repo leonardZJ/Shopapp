@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initail-scale=1">
+	<title>首页</title>
+	<link rel="stylesheet" href="./adapter.css">
+	<link rel="stylesheet" href="./normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+	<style>
+	/* 全局样式 */
+	ul,li,p {
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+	li {
+		list-style: none;
+	}
+	/*头部导航条*/
+	.headerbar{
+		width: 100%;
+		height: 3rem;
+		background-color: #26b53e;
+		position: fixed;
+		top: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 999;
+	}
+	.headerbar a {
+		color: #fff;
+		font-size: 0.87rem;
+	}
+	.headerbar .header-l {
+		text-align: left;
+		margin-left: 0.67rem;
+	}
+	.headerbar .header-c {
+		font-size: 1rem;
+	}
+	.headerbar .header-r {
+		text-align: right;
+		margin-right: 0.67rem;
+	}
+	/* 轮播图 */
+	.slider {
+		margin-top: 3.06rem;
+	}
+	.sliderLine {
+		width: 100%;
+		height: 0.67rem;
+		background-color: #eee;
+	}
+	.swiper-pagination-bullet {
+		background-color: #21a123;
+	}
+	.slider-page {
+		height: 12rem;
+	}
+	.slider-page-item {
+		width: 100%;
+		height: 50%;
+		display: flex;	
+	}
+	.item-content {
+		padding: 0.67rem;
+		text-align: center;
+		font-size: 0.67rem;
+		flex: 1;
+	}
+	.item-content img {
+		height: 3.5rem;
+	}
+	/* 商家列表 */
+	.storeItems {
+		margin-bottom: 3rem;
+	}
+	.near {
+		margin-left: 0.67rem; 
+		font-size: 0.9rem;
+		color: #aaa;
+	}
+	.storeItem {
+		position: relative;
+		margin: 0.67rem 0.33rem;
+		font-size: 0.67rem;
+	}
+	.storeItem-l {
+		height: 4.27rem;
+		display: inline-block;
+		margin-right: 0.6rem;
+		float: left;
+	}
+	.storeItem-c {
+		height: 4.27rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.storeItem-c-t .brand {
+		margin-right: 0.33rem;
+		background-color: #f1da0d;
+		border-radius: 0.13rem;
+	}
+	.storeItem-c-t .storeName {
+		color: #000;
+		font-size: 1rem;
+		font-weight: 800;
+	}
+	.storeItem-c-m .score {
+		color: #f1a50d;
+		margin: 0.33rem;
+	}
+	.storeItem-c-m .saleCount {
+		margin-right: 0.5rem;
+	}
+	.storeItem-r {
+		position: absolute;
+		right: 1rem;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.storeItem-r p {
+		margin: 0.67rem 0;
+	}
+	.storeItem-r .proimse {
+		width: 3rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	.storeItem-r .proimse span {
+		text-align: center;
+		width: 0.8rem;
+		color: #000;
+		border: 1px solid #eee;
+		border-radius: 0.06rem;
+		font-size: 0.8rem;
+	}
+	.storeItem-r .deliver {
+		font-size: 0.5rem;
+		color: #1bb51e;
+		text-align: center;
+	}
+	.line {
+		margin: 0 0.33rem;
+		height: 0.07rem;
+		background-color: #ddd;
+	}
+	/* 底部导航栏 */
+	.footerbar {
+		width: 100%;
+		height: 3rem;
+		background-color: #26b53e;
+		position: fixed;
+		bottom: 0;
+		display: flex;
+		z-index: 999;
+	}
+	.footerbar a {
+		flex: 1;
+		position: relative;
+		color: #000;
+		font-size: 0.8rem;
+		font-weight: 800;
+	}
+	.footerbarItem {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+	.footerbarLine {
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+		position: fixed;
+		bottom: 3rem;
+		z-index: 999;
+	}
+	</style>
+</head>
+<body>
+	<!-- 头部导航条 -->
+	<div class="headerbar">
+		<a href="#" class="header-l">搜索图标</a>
+		<a href="#" class="header-c">广州xx大道xx街</a>
+		<a href="#" class="header-r">登陆注册</a>
+	</div>
+	<!-- 轮播图 -->
+	<div class="slider swiper-container swiper-container-horizontal">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide swiper-slide-active" style="width: 100%;">
+				<div class="slider-page">
+					<div class="slider-page-item">
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+					</div>
+					<div class="slider-page-item">
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide swiper-slide-next" style="width: 100%;">
+				<div class="slider-page">
+					<div class="slider-page-item">
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+					</div>
+					<div class="slider-page-item">
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+						<a href="" class="item-content">
+							<p><img src="../static/imgs/9.png" alt=""></p>
+							<p>甜品饮品</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination swiper-pagination-bullets">
+			<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+			<span class="swiper-pagination-bullet"></span>
+		</div>
+			<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+	</div>
+	<div class="sliderLine"></div>
+	<!-- 商家列表 -->
+	<div class="storeItems">
+		<a href="#" class="near">附近商家</a>
+		<div class="storeItem">
+			<div class="storeItem-l">
+				<a href="#">
+					<img src="../static/imgs/购物篮.png" alt="">
+				</a>
+			</div>
+			<a href="#" class="storeItem-c">
+				<p class="storeItem-c-t">
+					<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
+				</p>
+				<p class="storeItem-c-m">
+					<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
+				</p>
+				<p class="storeItem-c-b">
+					<span>￥20起送/配送费约￥5</span>
+				</p>
+			</a>
+			<div class="storeItem-r">
+				<a href="">
+					<p class="proimse">
+						<span>保</span><span>准</span><span>券</span>
+					</p>
+					<p class="deliver">美团专送</p>
+				</a>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="storeItem">
+			<div class="storeItem-l">
+				<a href="#">
+					<img src="../static/imgs/购物篮.png" alt="">
+				</a>
+			</div>
+			<a href="#" class="storeItem-c">
+				<p class="storeItem-c-t">
+					<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
+				</p>
+				<p class="storeItem-c-m">
+					<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
+				</p>
+				<p class="storeItem-c-b">
+					<span>￥20起送/配送费约￥5</span>
+				</p>
+			</a>
+			<div class="storeItem-r">
+				<a href="">
+					<p class="proimse">
+						<span>保</span><span>准</span><span>券</span>
+					</p>
+					<p class="deliver">美团专送</p>
+				</a>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="storeItem">
+			<div class="storeItem-l">
+				<a href="#">
+					<img src="../static/imgs/购物篮.png" alt="">
+				</a>
+			</div>
+			<a href="#" class="storeItem-c">
+				<p class="storeItem-c-t">
+					<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
+				</p>
+				<p class="storeItem-c-m">
+					<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
+				</p>
+				<p class="storeItem-c-b">
+					<span>￥20起送/配送费约￥5</span>
+				</p>
+			</a>
+			<div class="storeItem-r">
+				<a href="">
+					<p class="proimse">
+						<span>保</span><span>准</span><span>券</span>
+					</p>
+					<p class="deliver">美团专送</p>
+				</a>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="storeItem">
+			<div class="storeItem-l">
+				<a href="#">
+					<img src="../static/imgs/购物篮.png" alt="">
+				</a>
+			</div>
+			<a href="#" class="storeItem-c">
+				<p class="storeItem-c-t">
+					<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
+				</p>
+				<p class="storeItem-c-m">
+					<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
+				</p>
+				<p class="storeItem-c-b">
+					<span>￥20起送/配送费约￥5</span>
+				</p>
+			</a>
+			<div class="storeItem-r">
+				<a href="">
+					<p class="proimse">
+						<span>保</span><span>准</span><span>券</span>
+					</p>
+					<p class="deliver">美团专送</p>
+				</a>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="storeItem">
+			<div class="storeItem-l">
+				<a href="#">
+					<img src="../static/imgs/购物篮.png" alt="">
+				</a>
+			</div>
+			<a href="#" class="storeItem-c">
+				<p class="storeItem-c-t">
+					<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
+				</p>
+				<p class="storeItem-c-m">
+					<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
+				</p>
+				<p class="storeItem-c-b">
+					<span>￥20起送/配送费约￥5</span>
+				</p>
+			</a>
+			<div class="storeItem-r">
+				<a href="">
+					<p class="proimse">
+						<span>保</span><span>准</span><span>券</span>
+					</p>
+					<p class="deliver">美团专送</p>
+				</a>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="storeItem">
+			<div class="storeItem-l">
+				<a href="#">
+					<img src="../static/imgs/购物篮.png" alt="">
+				</a>
+			</div>
+			<a href="#" class="storeItem-c">
+				<p class="storeItem-c-t">
+					<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
+				</p>
+				<p class="storeItem-c-m">
+					<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
+				</p>
+				<p class="storeItem-c-b">
+					<span>￥20起送/配送费约￥5</span>
+				</p>
+			</a>
+			<div class="storeItem-r">
+				<a href="">
+					<p class="proimse">
+						<span>保</span><span>准</span><span>券</span>
+					</p>
+					<p class="deliver">美团专送</p>
+				</a>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="storeItem">
+			<div class="storeItem-l">
+				<a href="#">
+					<img src="../static/imgs/购物篮.png" alt="">
+				</a>
+			</div>
+			<a href="#" class="storeItem-c">
+				<p class="storeItem-c-t">
+					<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
+				</p>
+				<p class="storeItem-c-m">
+					<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
+				</p>
+				<p class="storeItem-c-b">
+					<span>￥20起送/配送费约￥5</span>
+				</p>
+			</a>
+			<div class="storeItem-r">
+				<a href="">
+					<p class="proimse">
+						<span>保</span><span>准</span><span>券</span>
+					</p>
+					<p class="deliver">美团专送</p>
+				</a>
+			</div>
+		</div>
+		<div class="line"></div>
+	</div>
+	<!-- 底部导航栏 -->
+	<div class="footerbarLine"></div>
+	<div class="footerbar">
+		<a href="#"><div class="footerbarItem"><span>首页</span></div></a>
+		<a href="#"><div class="footerbarItem"><span>搜索</span></div></a>
+		<a href="#"><div class="footerbarItem"><span>订单</span></div></a>
+		<a href="#"><div class="footerbarItem"><span>我的</span></div></a>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>
