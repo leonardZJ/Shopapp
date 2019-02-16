@@ -6,6 +6,7 @@
 	<title>首页</title>
 	<link rel="stylesheet" href="./adapter.css">
 	<link rel="stylesheet" href="./normalize.css">
+	<link rel="stylesheet" href="./iconfont.css">
 	<style>
 	/* 全局样式 */
 	ul,li,p {
@@ -121,14 +122,26 @@
 	}
 	.option a {
 		display: block;
+		position: relative;
 		padding: 0.67rem;
 	}
 	.option .right {
-		float: right;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0.67rem;
+		font-size: 2rem;
+		color: #aaa;
 	}
 	.option .market {
 		border-top: 1px solid #eee;
 		border-bottom: 1px solid #eee;
+	}
+	.service {
+		border-bottom: 1px solid #eee;
+	}
+	.icon-right {
+		font-size: 2.5rem;
 	}
 	/* 底部导航栏 */
 	.footerbar {
@@ -161,6 +174,11 @@
 		bottom: 3rem;
 		z-index: 999;
 	}
+	.footerbarItem p {
+		text-align: center;
+		font-size: 1.5rem;
+		color: #ccc;
+	}
 	</style>
 </head>
 <body>
@@ -179,7 +197,7 @@
 					<p>登陆/注册</p>
 					<p>暂时无绑定手机号</p>
 				</div>
-				<div class="rigth">向右箭头</div>
+				<div class="rigth iconfont icon-right"></div>
 			</a>
 		</div>
 		<div class="count">
@@ -207,19 +225,19 @@
 			<div class="order">
 				<a href="">
 					<span>我的订单</span>
-					<div class="right">向右箭头</div>
+					<div class="right iconfont icon-right"></div>
 				</a>
 			</div>
 			<div class="market">
 				<a href="">
 					<span>积分商城</span>
-					<div class="right">向右箭头</div>
+					<div class="right iconfont icon-right"></div>
 				</a>
 			</div>
 			<div class="member">
 				<a href="">
 					<span>会员中心</span>
-					<div class="right">向右箭头</div>
+					<div class="right iconfont icon-right"></div>
 				</a>
 			</div>
 		</div>
@@ -228,7 +246,7 @@
 			<div class="service">
 				<a href="">
 					<span>服务中心</span>
-					<div class="right">向右箭头</div>
+					<div class="right iconfont icon-right"></div>
 				</a>
 			</div>
 		</div>
@@ -236,10 +254,10 @@
 	<!-- 底部导航栏 -->
 	<div class="footerbarLine"></div>
 	<div class="footerbar">
-		<a href="#"><div class="footerbarItem"><span>首页</span></div></a>
-		<a href="#"><div class="footerbarItem"><span>搜索</span></div></a>
-		<a href="#"><div class="footerbarItem"><span>订单</span></div></a>
-		<a href="#"><div class="footerbarItem"><span>我的</span></div></a>
+		<a href="#"><div class="footerbarItem"><p class="iconfont icon-shouye"></p><span>首页</span></div></a>
+		<a href="#"><div class="footerbarItem"><p class="iconfont icon-search"></p><span>搜索</span></div></a>
+		<a href="#"><div class="footerbarItem"><p class="iconfont icon-danlieliebiao"></p><span>订单</span></div></a>
+		<a href="#"><div class="footerbarItem"><p class="iconfont icon-account"></p><span>我的</span></div></a>
 	</div>
 </body>
 </html>

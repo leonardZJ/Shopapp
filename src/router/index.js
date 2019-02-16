@@ -1,15 +1,51 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import VueRouter from 'vue-router'
 
-Vue.use(Router)
+import Home from '../pages/Home/Home.vue'
+import Order from '../pages/Order/Order.vue'
+import Profile from '../pages/Profile/Profile.vue'
+import Search from '../pages/Search/Search.vue'
+import Login from '../pages/Login/Login.vue'
 
-export default new Router({
+Vue.use(VueRouter)
+
+export default new VueRouter({
   routes: [
     {
+      path: '/home',
+      component: Home,
+      meta: {
+        showFooter: true
+      }
+    },
+    {
+      path: '/order',
+      component: Order,
+      meta: {
+        showFooter: true
+      }
+    },
+    {
+      path: '/profile',
+      component: Profile,
+      meta: {
+        showFooter: true
+      }
+    },
+    {
+      path: '/search',
+      component: Search,
+      meta: {
+        showFooter: true
+      }
+    },
+    {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      redirect: '/home'
+    },
+    {
+      path: '/login',
+      component: Login
     }
   ]
 })

@@ -6,6 +6,7 @@
 	<title>首页</title>
 	<link rel="stylesheet" href="./adapter.css">
 	<link rel="stylesheet" href="./normalize.css">
+	<link rel="stylesheet" href="./iconfont.css">
 	<style>
 	/* 全局样式 */
 	ul,li,p {
@@ -32,9 +33,9 @@
 	}
 	.headerbar a {
 		color: #fff;
-		font-size: 1rem;
+		font-size: 2.5rem;
 		position: absolute;
-		left: 0.67rem;
+		left: 0;
 	}
 	/* 商家信息 */
 	.header {
@@ -70,6 +71,9 @@
 		margin: 0 0.67rem;
 		font-size: 1.2rem;
 		font-weight: 600;
+	}
+	.icon-right {
+		font-size: 1.2rem;
 	}
 	.header-c span {
 		margin: 0 0.33rem;
@@ -113,7 +117,7 @@
 		height: 100%;
 		box-sizing: border-box;
 	}
-	/* 底部购物车 */
+	/* 底部购物篮 */
 	.footerbar {
 		width: 100%;
 		height: 3rem;
@@ -132,11 +136,20 @@
 		height: 3.8rem;
 		border: 0.33rem solid #000;
 		border-radius: 1.9rem;
-		background-color: #333;
+		background-color: #26b53e;
 		position: absolute;
 		bottom: 0;
 		left: 0.88rem;
 		box-sizing: border-box;
+	}
+	.icon-gouwuche-tianchong {
+		display: inline-block;
+		font-size: 2.5rem;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color: #fff;
 	}
 	.shopcar {
 		color: #fff;
@@ -167,32 +180,33 @@
 		color: #aaa;
 		line-height: 1rem;
 	}
+
 	</style>
 </head>
 <body>
 	<!-- 头部导航条 -->
 	<div class="headerbar">
-		<a href="">返回箭头</a>
+		<a href="" class="iconfont icon-back"></a>
 	</div>
 	
 	<!-- 商家信息 -->
 	<div class="header">
 		<div class="businessSign">
-			<img src="../static/imgs/3.jpg" alt="">
+			<img src="../static/imgs/商标.jpg" alt="">
 		</div>
-			<p class="header-t"><span>品牌</span><span>城隍庙包子（保利水城）</span><span>向右箭头</span></p>
+			<p class="header-t"><span>品牌</span><span>城隍庙包子（保利水城）</span><span class="iconfont icon-right"></span></p>
 			<p class="header-c">月售90单<span>·</span>硅谷专送<span>·</span>约28分钟<span>·</span>距离1000m</p>
-			<p class="header-b"><span>首单</span><span>新用户下单立减17元(不与其他活动同时使用)</span><span>8个优惠向下箭头</span></p>
+			<p class="header-b"><span>首单</span><span>新用户下单立减17元(不与其他活动同时使用)</span><span>8个优惠</span><span class="iconfont icon-down"></span></p>
 	</div>
 	<div class="option">
 		<a href=""><span>点餐</span></a>
 		<a href=""><span>评价</span></a>
 		<a href=""><span>商家</span></a>
 	</div>
-	<!-- 底部购物车 -->
+	<!-- 底部购物篮 -->
 	<div class="footerbar">
 		<a href="" class="footer">
-			<div class="shopcaricon"></div>
+			<div class="shopcaricon"><span class="iconfont icon-gouwuche-tianchong"></span></div>
 			<div class="shopcar">
 				<p>￥0</p>
 				<p>配送费￥4元</p>
