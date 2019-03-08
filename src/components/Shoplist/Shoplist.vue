@@ -2,203 +2,49 @@
 	<div>
 		<!-- 商家列表 -->
 		<div class="storeItems">
-			<a href="" class="near iconfont icon-danlieliebiao">附近商家</a>
-			<div class="storeItem">
+			<span href="" class="near iconfont icon-danlieliebiao">附近商家</span>
+			<div class="storeItem" v-for="(item,index) in 12" :key="index" @click="$router.push('/shop')">
 				<div class="storeItem-l">
-					<a href="">
-						<img src="./images/购物篮.png" alt="">
-					</a>
+					<img src="./images/购物篮.png" alt="">
 				</div>
-				<a href="" class="storeItem-c">
+				<span href="" class="storeItem-c">
 					<p class="storeItem-c-t">
-						<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
+						<span class="brand">品牌</span><span class="storeName">一品食客(保利水城)</span>
 					</p>
 					<p class="storeItem-c-m">
-						<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
+						<span class="star">
+							<Star :score="3.8"></Star>
+						</span>
+						<span class="score">3.8</span>
+						<span class="saleCount">月售106单</span>
 					</p>
 					<p class="storeItem-c-b">
 						<span>￥20起送/配送费约￥5</span>
 					</p>
-				</a>
+				</span>
 				<div class="storeItem-r">
 					<a href="">
 						<p class="proimse">
-							<span>保</span><span>准</span><span>券</span>
+							<span>保</span>
+							<span>准</span>
+							<span>券</span>
 						</p>
 						<p class="deliver">美团专送</p>
 					</a>
 				</div>
+				<div class="shopListLine" ></div>
 			</div>
-			<div class="shopListLine"></div>
-			<div class="storeItem">
-				<div class="storeItem-l">
-					<a href="">
-						<img src="./images/购物篮.png" alt="">
-					</a>
-				</div>
-				<a href="" class="storeItem-c">
-					<p class="storeItem-c-t">
-						<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
-					</p>
-					<p class="storeItem-c-m">
-						<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
-					</p>
-					<p class="storeItem-c-b">
-						<span>￥20起送/配送费约￥5</span>
-					</p>
-				</a>
-				<div class="storeItem-r">
-					<a href="">
-						<p class="proimse">
-							<span>保</span><span>准</span><span>券</span>
-						</p>
-						<p class="deliver">美团专送</p>
-					</a>
-				</div>
-			</div>
-			<div class="shopListLine"></div>
-			<div class="storeItem">
-				<div class="storeItem-l">
-					<a href="">
-						<img src="./images/购物篮.png" alt="">
-					</a>
-				</div>
-				<a href="" class="storeItem-c">
-					<p class="storeItem-c-t">
-						<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
-					</p>
-					<p class="storeItem-c-m">
-						<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
-					</p>
-					<p class="storeItem-c-b">
-						<span>￥20起送/配送费约￥5</span>
-					</p>
-				</a>
-				<div class="storeItem-r">
-					<a href="">
-						<p class="proimse">
-							<span>保</span><span>准</span><span>券</span>
-						</p>
-						<p class="deliver">美团专送</p>
-					</a>
-				</div>
-			</div>
-			<div class="shopListLine"></div>
-			<div class="storeItem">
-				<div class="storeItem-l">
-					<a href="">
-						<img src="./images/购物篮.png" alt="">
-					</a>
-				</div>
-				<a href="" class="storeItem-c">
-					<p class="storeItem-c-t">
-						<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
-					</p>
-					<p class="storeItem-c-m">
-						<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
-					</p>
-					<p class="storeItem-c-b">
-						<span>￥20起送/配送费约￥5</span>
-					</p>
-				</a>
-				<div class="storeItem-r">
-					<a href="">
-						<p class="proimse">
-							<span>保</span><span>准</span><span>券</span>
-						</p>
-						<p class="deliver">美团专送</p>
-					</a>
-				</div>
-			</div>
-			<div class="shopListLine"></div>
-			<div class="storeItem">
-				<div class="storeItem-l">
-					<a href="">
-						<img src="./images/购物篮.png" alt="">
-					</a>
-				</div>
-				<a href="" class="storeItem-c">
-					<p class="storeItem-c-t">
-						<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
-					</p>
-					<p class="storeItem-c-m">
-						<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
-					</p>
-					<p class="storeItem-c-b">
-						<span>￥20起送/配送费约￥5</span>
-					</p>
-				</a>
-				<div class="storeItem-r">
-					<a href="">
-						<p class="proimse">
-							<span>保</span><span>准</span><span>券</span>
-						</p>
-						<p class="deliver">美团专送</p>
-					</a>
-				</div>
-			</div>
-			<div class="shopListLine"></div>
-			<div class="storeItem">
-				<div class="storeItem-l">
-					<a href="">
-						<img src="./images/购物篮.png" alt="">
-					</a>
-				</div>
-				<a href="" class="storeItem-c">
-					<p class="storeItem-c-t">
-						<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
-					</p>
-					<p class="storeItem-c-m">
-						<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
-					</p>
-					<p class="storeItem-c-b">
-						<span>￥20起送/配送费约￥5</span>
-					</p>
-				</a>
-				<div class="storeItem-r">
-					<a href="">
-						<p class="proimse">
-							<span>保</span><span>准</span><span>券</span>
-						</p>
-						<p class="deliver">美团专送</p>
-					</a>
-				</div>
-			</div>
-			<div class="shopListLine"></div>
-			<div class="storeItem">
-				<div class="storeItem-l">
-					<a href="">
-						<img src="./images/购物篮.png" alt="">
-					</a>
-				</div>
-				<a href="" class="storeItem-c">
-					<p class="storeItem-c-t">
-						<span class="brand">品牌</span><span class="storeName">城隍庙包子(保利水城)</span>
-					</p>
-					<p class="storeItem-c-m">
-						<span class="score">4.7</span><span class="saleCount">月售106单</span><span class="star">星级</span>
-					</p>
-					<p class="storeItem-c-b">
-						<span>￥20起送/配送费约￥5</span>
-					</p>
-				</a>
-				<div class="storeItem-r">
-					<a href="">
-						<p class="proimse">
-							<span>保</span><span>准</span><span>券</span>
-						</p>
-						<p class="deliver">美团专送</p>
-					</a>
-				</div>
-			</div>
-			<div class="shopListLine"></div>
 		</div>
 	</div>
 </template>
 
 <script>
+	import Star from '../Star/Star.vue'
+
 	export default {
-		
+		components: {
+			Star
+		}
 	}
 </script>
 
@@ -214,14 +60,15 @@
 		color: #aaa;
 	}
 	.storeItem {
+		margin-top: 0.33rem;
 		position: relative;
-		margin: 0.67rem 0.33rem;
 		font-size: 0.67rem;
 	}
 	.storeItem-l {
 		height: 4.27rem;
 		display: inline-block;
 		margin-right: 0.6rem;
+		margin-left: 1rem;
 		float: left;
 	}
 	.storeItem-c {
@@ -242,7 +89,6 @@
 	}
 	.storeItem-c-m .score {
 		color: #f1a50d;
-		margin: 0.33rem;
 	}
 	.storeItem-c-m .saleCount {
 		margin-right: 0.5rem;
@@ -275,7 +121,7 @@
 		text-align: center;
 	}
 	.shopListLine {
-		margin: 0 0.33rem;
+		margin: 0.33rem 0.33rem;
 		height: 0.07rem;
 		background-color: #ddd;
 	}

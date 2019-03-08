@@ -11,7 +11,7 @@
 				<span>
 					<div class="content">
 						<p>登陆/注册</p>
-						<p>暂时无绑定手机号</p>
+						<p>暂无绑定手机号</p>
 					</div>
 					<div class="rigth iconfont icon-right"></div>
 				</span>
@@ -67,19 +67,33 @@
 				</div>
 			</div>
 		</div>
+		<mt-button type="danger" size="large" v-if="!userInfo" class="logoutBtn" @click="logout">退出登陆</mt-button>
 	</div>
 </template>
 
 <script>
+	import {mapState} from 'vuex'
+	import {MessageBox,Toast} from 'mint-ui'
 	import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
 
 	export default {
+		computed: {
+			...mapState(['userInfo'])
+		},
 		components: {
-			HeaderTop
+			HeaderTop,
 		},
 		methods: {
 			goTo: function(path) {
 				this.$router.push(path)
+			},
+			logout: function() {
+				MessageBox.confirm('确定退出吗?').then(action => {
+					//调用actions行为进行异步登出
+					//this.$store.dispatch('logout')
+					//退出成功后提示Toast
+					Toast('退出成功')
+				});
 			}
 		}
 	}
@@ -189,5 +203,10 @@
 	}
 	.icon-right {
 		font-size: 2.5rem;
+	}
+	/* 退出按钮 */
+	.logoutBtn {
+		width: 80%;
+		margin: 1rem auto;
 	}
 </style>

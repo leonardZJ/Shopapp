@@ -44,7 +44,7 @@
 		z-index: 999;
 		color: #fff;
 	}
-	.header-c {
+	.headerbar .header-c {
 		font-size: 1.2rem;
 	}
 </style>

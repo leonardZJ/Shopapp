@@ -10,7 +10,7 @@ export default function ajax(url,data={},type='GET') {
 				dataStr = dataStr + key + '=' + data[key] + '&'
 			})
 			if(dataStr !== '') {
-				dataStr = dataStr.substring(0,dataStr.lastIndexof('&'))
+				dataStr = dataStr.substring(0,dataStr.lastIndexOf('&'))
 				url = url + '?' + dataStr
 			}
 			promise = axios.get(url)

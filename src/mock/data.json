@@ -1,0 +1,316 @@
+{
+	"categorys": [
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		},
+		{
+			"name": "甜品饮品",
+			"img": "xxx"
+		}
+	],
+	"info": {
+		"name": "一品食客（保利水城）",
+		"score": 3.5,
+		"deliverPrice": 4,
+		"startDeliverPrice": 20
+	},
+	"goods": [
+		{
+			"name": "今日折扣",
+			"foods": [
+				{
+					"name": "水晶凤爪",
+					"price": 12
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 10
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 11
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 9
+				}
+			]
+		},
+		{
+			"name": "热卖商品",
+			"foods": [
+				{
+					"name": "水晶凤爪",
+					"price": 12
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 10
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 11
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 9
+				}
+			]
+		},
+		{
+			"name": "精品蒸烧",
+			"foods": [
+				{
+					"name": "水晶凤爪",
+					"price": 12
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 10
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 11
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 9
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 12
+				}
+			]
+		},
+		{
+			"name": "商务套餐",
+			"foods": [
+				{
+					"name": "水晶凤爪",
+					"price": 12
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 10
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 11
+				}
+			]
+		},
+		{
+			"name": "居家菜系",
+			"foods": [
+				{
+					"name": "水晶凤爪",
+					"price": 11
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 10
+				}
+			]
+		},
+		{
+			"name": "居家菜系",
+			"foods": [
+				{
+					"name": "水晶凤爪",
+					"price": 12
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 11
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 10
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 12
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 9
+				}
+			]
+		},
+		{
+			"name": "居家菜系",
+			"foods": [
+				{
+					"name": "水晶凤爪",
+					"price": 9
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 12
+				}
+			]
+		},
+		{
+			"name": "居家菜系",
+			"foods": [
+				{
+					"name": "水晶凤爪",
+					"price": 10
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 12
+				},
+				{
+					"name": "水晶凤爪",
+					"price": 11
+				}
+			]
+		}
+	],
+	"ratings": [
+		{	"name": "13*******55",
+			"text": "这家很好吃",
+			"rateType": 0,
+			"score": 3.5
+		},
+		{	"name": "13*******55",
+			"text": "这家很好吃",
+			"rateType": 0,
+			"score": 3.5
+		},
+		{	"name": "13*******55",
+			"text": "这家很好吃",
+			"rateType": 0,
+			"score": 3.5
+		},
+		{	"name": "13*******55",
+			"text": "这家很好吃",
+			"rateType": 0,
+			"score": 3.5
+		},
+		{	"name": "13*******55",
+			"text": "这家很好吃",
+			"rateType": 0,
+			"score": 3.5
+		},
+		{	"name": "13*******55",
+			"text": "这家很好吃",
+			"rateType": 0,
+			"score": 3.5
+		},
+		{	"name": "13*******55",
+			"text": "这家很好吃",
+			"rateType": 0,
+			"score": 3.5
+		},
+		{	"name": "13*******55",
+			"text": "一般般",
+			"rateType": 1,
+			"score": 1
+		},
+		{	"name": "13*******55",
+			"text": "",
+			"rateType": 1,
+			"score": 1
+		},
+		{	"name": "13*******55",
+			"text": "",
+			"rateType": 1,
+			"score": 1
+		},
+		{	"name": "13*******55",
+			"text": "",
+			"rateType": 1,
+			"score": 1
+		},
+		{	"name": "13*******55",
+			"text": "",
+			"rateType": 1,
+			"score": 1
+		},
+		{	"name": "13*******55",
+			"text": "一般般",
+			"rateType": 1,
+			"score": 1
+		},
+		{	"name": "13*******55",
+			"text": "一般般",
+			"rateType": 1,
+			"score": 1
+		},
+		{	"name": "13*******55",
+			"text": "一般般",
+			"rateType": 1,
+			"score": 1
+		},
+		{	"name": "13*******55",
+			"text": "一般般",
+			"rateType": 1,
+			"score": 1
+		},
+		{	"name": "13*******55",
+			"text": "一般般",
+			"rateType": 1,
+			"score": 1
+		}
+	]
+	
+}
