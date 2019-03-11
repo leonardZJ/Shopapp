@@ -20,9 +20,7 @@
 					</div>
 					<div class="bottom-input">
 						<input type="text" placeholder="验证码" class="input-style" v-model="captcha">
-						<a href="">
-							<img src="./images/验证码.jpg" alt="captcha" @click="getCaptcha" ref="captcha">
-						</a>
+						<img src="./images/验证码.jpg" alt="captcha" @click="getCaptcha" ref="captcha">
 					</div>
 				</div>
 				<!-- 短信登陆 -->
