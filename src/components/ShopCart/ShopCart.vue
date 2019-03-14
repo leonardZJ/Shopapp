@@ -88,11 +88,9 @@
 							this.scroll = new BScroll('.shopCartTop-content',{
 								click: true
 							})
-							console.log(this.scroll)
 						} else {
 							//让滚动条刷新，重新统计内容的高度
 							this.scroll.refresh()
-							console.log(this.scroll)
 						}
 					})
 				}

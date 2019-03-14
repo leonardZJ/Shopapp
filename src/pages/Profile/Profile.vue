@@ -142,6 +142,7 @@
 		top: 50%;
 		right: 0;
 		transform: translateY(-50%);
+		font-size: 2.5rem;
 	}
 	.count {
 		width: 100%;
@@ -200,9 +201,6 @@
 	}
 	.service {
 		border-bottom: 1px solid #eee;
-	}
-	.icon-right {
-		font-size: 2.5rem;
 	}
 	/* 退出按钮 */
 	.logoutBtn {
